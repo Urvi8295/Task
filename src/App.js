@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import LanguageSelector from "./LanguageSelector";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+  const mockTimezones = {
+    "en-US": [
+      "America/New_York",
+      "America/Chicago",
+      "America/Los_Angeles",
+      "America/Denver",
+      "Pacific/Honolulu",
+    ],
+
+    "en-GB": [
+      "Europe/London",
+      "Europe/Belfast",
+      "Europe/Gibraltar",
+      "Atlantic/Reykjavik",
+      "Europe/Dublin",
+    ],
+
+    "en-IN": [
+      "Asia/Kolkata",
+      "Asia/Delhi",
+      "Asia/Mumbai",
+      "Asia/Bangalore",
+      "Asia/Chennai",
+    ],
+
+    "pt-BR": [
+      "America/Sao_Paulo",
+      "America/Fortaleza",
+      "America/Bahia",
+      "America/Recife",
+      "America/Belem",
+    ],
+
+    "ja-JP": [
+      "Asia/Tokyo",
+      "Asia/Osaka",
+      "Asia/Nagoya",
+      "Asia/Sapporo",
+      "Asia/Fukuoka",
+    ],
+  };
+  return <LanguageSelector mockTimezones={mockTimezones} />;
+};
 
 export default App;

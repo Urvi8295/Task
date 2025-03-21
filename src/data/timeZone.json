@@ -1,0 +1,6 @@
+{
+  "en-US": ["America/New_York", "America/Los_Angeles", "America/Chicago"],
+  "en-GB": ["Europe/London", "Europe/Belfast", "Europe/Gibraltar"],
+  "pt-BR": ["America/Sao_Paulo", "America/Fortaleza", "America/Bahia"],
+  "en-IN": ["Asia/Kolkata"]
+}
